@@ -8,10 +8,7 @@
         motion:constraintSetEnd="@+id/end"
         motion:duration="5000"
         motion:pathMotionArc="none">
-        <OnSwipe
-            motion:touchAnchorId="@+id/button"
-            motion:touchAnchorSide="right"
-            motion:dragDirection="dragRight" />
+        <OnClick motion:targetId="@+id/button" />
 
         <KeyFrameSet>
 

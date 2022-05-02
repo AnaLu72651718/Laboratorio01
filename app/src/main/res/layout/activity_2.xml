@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AEE4DF"
+    app:layoutDescription="@xml/activity_2_scene2"
     tools:context=".Activity2">
 
 
@@ -12,9 +12,64 @@
         android:id="@+id/actividad1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Actividad 1"
+        android:layout_marginTop="8dp"
+        android:text="@string/actividad1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="667dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonA1"
+        android:layout_width="54dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/a1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+
+    <Button
+        android:id="@+id/buttonA2"
+        android:layout_width="54dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="98dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/a2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonA3"
+        android:layout_width="54dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/a3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonA4"
+        android:layout_width="54dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/a4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
