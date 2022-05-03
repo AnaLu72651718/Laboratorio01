@@ -212,27 +212,20 @@
 
 
 
+
     <Transition
         motion:constraintSetEnd="@+id/img"
         motion:constraintSetStart="@+id/MedioA3"
         motion:duration="1000"
-        motion:motionInterpolator="cubic(0.2,0.2,0.87,0.1)" >
+        motion:motionInterpolator="linear" >
 
         <OnSwipe
-            motion:touchAnchorId="@+id/container"
+            motion:touchAnchorId="@+id/buttonA3"
             motion:touchAnchorSide="top"
             motion:dragDirection="dragUp" />
-        <OnClick motion:clickAction="toggle"
-            motion:targetId="@id/buttonA3" />
     </Transition>
 
-    <ConstraintSet android:id="@+id/img" >
-        <Constraint
-            motion:layout_editor_absoluteY="277dp"
-            android:layout_height="wrap_content"
-            motion:layout_editor_absoluteX="48dp"
-            android:layout_width="wrap_content"
-            android:id="@+id/imageView3" />
+    <ConstraintSet android:id="@+id/img">
 
         <Constraint
             android:id="@+id/container"
@@ -244,12 +237,6 @@
             motion:layout_constraintEnd_toEndOf="parent">
 
         </Constraint>
-        <Constraint
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            motion:layout_editor_absoluteY="197dp"
-            motion:layout_editor_absoluteX="56dp" />
     </ConstraintSet>
 
 
