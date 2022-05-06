@@ -134,61 +134,57 @@
     <Transition
         motion:constraintSetStart="@+id/initial"
         motion:constraintSetEnd="@+id/act02"
-        motion:duration="3000">
+        motion:duration="2000">
         <OnClick motion:targetId="@+id/buttonA4" />
+
         <KeyFrameSet>
-            <KeyTimeCycle
-                motion:framePosition="0"
+            <KeyCycle
+                motion:framePosition="20"
                 motion:motionTarget="@+id/buttonA4"
                 motion:wavePeriod="1"
                 motion:waveOffset="0dp"
                 motion:waveShape="sin"
-                android:scaleX="2"
-                android:scaleY="2"
                 />
             <KeyAttribute
                 motion:motionTarget="@+id/buttonA4"
-                motion:framePosition="0"
-                >
-                <CustomAttribute
-                    motion:attributeName="BackgroundColor"
-                    motion:customColorValue="@color/green"
-                    />
-            </KeyAttribute>
-            <KeyAttribute
-                motion:motionTarget="@+id/buttonA4"
                 motion:framePosition="20"
+                android:scaleX="2"
+                android:scaleY="2"
                 >
                 <CustomAttribute
-                    motion:attributeName="BackgroundColor"
+                    motion:attributeName="backgroundColor"
                     motion:customColorValue="@color/black"
                     />
             </KeyAttribute>
             <KeyAttribute
                 motion:motionTarget="@+id/buttonA4"
                 motion:framePosition="40"
-                >
+                android:scaleX="1"
+                android:scaleY="1" >
                 <CustomAttribute
-                    motion:attributeName="BackgroundColor"
+                    motion:attributeName="backgroundColor"
                     motion:customColorValue="@color/green"
                     />
             </KeyAttribute>
             <KeyAttribute
                 motion:motionTarget="@+id/buttonA4"
                 motion:framePosition="60"
+                android:scaleX="2"
+                android:scaleY="2"
                 >
                 <CustomAttribute
-                    motion:attributeName="BackgroundColor"
+                    motion:attributeName="backgroundColor"
                     motion:customColorValue="@color/black"
                     />
             </KeyAttribute>
             <KeyAttribute
                 motion:motionTarget="@+id/buttonA4"
                 motion:framePosition="80"
-                >
+                android:scaleX="1"
+                android:scaleY="1" >
                 <CustomAttribute
-                    motion:attributeName="BackgroundColor"
-                    motion:customColorValue="@color/black"
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="@color/green"
                     />
             </KeyAttribute>
         </KeyFrameSet>
