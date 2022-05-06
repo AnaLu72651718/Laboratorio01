@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         activity2 = (Button)findViewById(R.id.actividad2) ;
         activity2.setOnClickListener(v -> {
-            Intent i = new Intent(MainActivity.this, Activity2.class);
+            Intent i = new Intent(MainActivity.this, MainActivity3.class);
             startActivity(i);
         });
     }
