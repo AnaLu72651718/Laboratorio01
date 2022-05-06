@@ -12,50 +12,45 @@
         android:id="@+id/buttonA1"
         android:layout_width="54dp"
         android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/green"
         android:text="@string/a1"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonA2"
         android:layout_width="54dp"
         android:layout_height="64dp"
+        android:layout_marginTop="72dp"
         android:backgroundTint="@color/green"
         android:text="@string/a2"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonA3"
         android:layout_width="54dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/green"
         android:text="@string/a3"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonA4"
         android:layout_width="54dp"
         android:layout_height="64dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/green"
         android:text="@string/a4"
         android:textColor="#FFFFFF"
